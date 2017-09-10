@@ -5,10 +5,12 @@ def stackInit():
         stackList.append("")
     print(stackList)
     startPointer = 0
-    endPointer = stackLen
+    # endPointer = stackLen
+    endPointer = -1
     runStack = True
     displayinstructions()
     while runStack:
+        print(stackList)
         command = input(">")
         if command == "0":
             runStack = False
@@ -19,7 +21,7 @@ def stackInit():
             # not sure if these things are global but I'm playing it safe (should've tested it out first)
             endPointer, stackList = push(endPointer, stackList)
         elif command == "3":
-            EmptyError = checkStackEmpty(stackList)
+            EmptyError = checkStackEmpty(endPointer, startPointer)
             if EmptyError == True:
                 print("The stack is empty and no item can be popped")
             endPointer, stackList = pop(endPointer, stackList)
