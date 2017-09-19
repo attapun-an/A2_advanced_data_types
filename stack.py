@@ -24,7 +24,9 @@ def stackInit():
             EmptyError = checkStackEmpty(endPointer, startPointer)
             if EmptyError == True:
                 print("The stack is empty and no item can be popped")
-            endPointer, stackList = pop(endPointer, stackList)
+            else:
+                endPointer, popped = pop(endPointer, stackList)
+                print(popped)
         elif command == "h":
             displayinstructions()
 
@@ -35,6 +37,8 @@ def push(endPointer, stackList):
     endPointer += 1
     stackList[endPointer] = item
     return endPointer, stackList
+
+#def splitString()
 
 # we need a check to see if it has gone over the stack size
 
