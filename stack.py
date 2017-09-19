@@ -1,6 +1,6 @@
 def stackInit():
     stackList = []
-    stackLen = 5
+    stackLen = 20
     for i in range(0,stackLen):
         stackList.append("")
     print(stackList)
@@ -10,13 +10,12 @@ def stackInit():
     runStack = True
     displayinstructions()
     while runStack:
-        print(stackList)
         command = input(">")
         if command == "0":
             runStack = False
             "stack stopping"
-        elif command == 1:
-            print(stackList)
+        elif command == "1":
+            print(stackList[0:endPointer+1])
         elif command == "2":
             # not sure if these things are global but I'm playing it safe (should've tested it out first)
             endPointer, stackList = push(endPointer, stackList)
@@ -27,18 +26,27 @@ def stackInit():
             else:
                 endPointer, popped = pop(endPointer, stackList)
                 print(popped)
+        elif command == "4":
+
+
         elif command == "h":
             displayinstructions()
 
 
 # adds a new item to the stack, moves the end pointer forwards.
 def push(endPointer, stackList):
-    item = input("input item: ")
-    endPointer += 1
-    stackList[endPointer] = item
-    return endPointer, stackList
+    if endPointer < len(stackList):
+        item = input("input item: ")
+        endPointer += 1
+        stackList[endPointer] = item
+        return endPointer, stackList
+    else:
+        print("out of range")
 
-#def splitString()
+def splitString(thisString):
+    listedString = thisString.list()
+    print(listedString)
+
 
 # we need a check to see if it has gone over the stack size
 
@@ -61,6 +69,7 @@ def displayinstructions():
     1 preview stack
     2 push item
     3 pop
+    4 reverse string
     h help (previews instructions) """)
 
 # test on returning multiple values in a function
