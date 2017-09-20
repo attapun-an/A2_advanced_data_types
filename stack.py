@@ -1,6 +1,6 @@
-def stackInit():
+def stackInit(stackInitLen):
     stackList = []
-    stackLen = 20
+    stackLen = stackInitLen
     for i in range(0,stackLen):
         stackList.append("")
     print(stackList)
@@ -16,15 +16,22 @@ def menu(stackList, startPointer, endPointer):
     runStack = True
     while runStack:
         command = input(">")
+        # exit the stack
         if command == "0":
             runStack = False
             "stack stopping"
             return False
+        # preview the stack
         elif command == "1":
             print(stackList[0:endPointer+1])
+        # push item
         elif command == "2":
             # not sure if these things are global but I'm playing it safe (should've tested it out first)
-            endPointer, stackList = push(endPointer, stackList)
+            if endPointer >= len(stackList)-1:
+                print("your stack is full, please pop items to make room or clear the stack")
+            else:
+                endPointer, stackList = push(endPointer, stackList)
+        # pop an item
         elif command == "3":
             EmptyError = checkStackEmpty(endPointer, startPointer)
             if EmptyError == True:
@@ -32,8 +39,10 @@ def menu(stackList, startPointer, endPointer):
             else:
                 endPointer, popped = pop(endPointer, stackList)
                 print(popped)
+        # re-initialize the stack
         elif command == "4":
             return True
+        # print the help screen
         elif command == "h":
             displayinstructions()
 
@@ -85,16 +94,19 @@ print(endPointer)
 print(popped)
 """
 
-def program_loop():
+def program_loop_normalStack():
     runProgram = True
     while runProgram:
-        stackList, startPointer, endPointer = stackInit()
+        stackList, startPointer, endPointer = stackInit(3)
         # checks if the stack should be re-initiated
         cont = menu(stackList, startPointer, endPointer)
         if cont == False:
             runProgram = False
 
-program_loop()
+program_loop_normalStack()
+
+
+
 
 """Task 5 – Make your code into a program with a purpose.
 Can you add a procedure to your program which accepts a string from the user.  
@@ -102,4 +114,7 @@ Then pushes each individual character onto a stack.  It should then pop each
 character off of the stack and print it on the screen.  This should have the 
 effect of reversing the string which the user originally entered.
 """
+
+def program_loop_reverseText():
+    #runProgram = True
 
