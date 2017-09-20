@@ -7,13 +7,19 @@ def stackInit():
     startPointer = 0
     # endPointer = stackLen
     endPointer = -1
-    runStack = True
+    return stackList, startPointer, endPointer
+
+
+
+def menu(stackList, startPointer, endPointer):
     displayinstructions()
+    runStack = True
     while runStack:
         command = input(">")
         if command == "0":
             runStack = False
             "stack stopping"
+            return False
         elif command == "1":
             print(stackList[0:endPointer+1])
         elif command == "2":
@@ -27,8 +33,7 @@ def stackInit():
                 endPointer, popped = pop(endPointer, stackList)
                 print(popped)
         elif command == "4":
-
-
+            return True
         elif command == "h":
             displayinstructions()
 
@@ -69,7 +74,7 @@ def displayinstructions():
     1 preview stack
     2 push item
     3 pop
-    4 reverse string
+    4 empty stack
     h help (previews instructions) """)
 
 # test on returning multiple values in a function
@@ -80,5 +85,21 @@ print(endPointer)
 print(popped)
 """
 
+def program_loop():
+    runProgram = True
+    while runProgram:
+        stackList, startPointer, endPointer = stackInit()
+        # checks if the stack should be re-initiated
+        cont = menu(stackList, startPointer, endPointer)
+        if cont == False:
+            runProgram = False
 
-stackInit()
+program_loop()
+
+"""Task 5 – Make your code into a program with a purpose.
+Can you add a procedure to your program which accepts a string from the user.  
+Then pushes each individual character onto a stack.  It should then pop each 
+character off of the stack and print it on the screen.  This should have the 
+effect of reversing the string which the user originally entered.
+"""
+
