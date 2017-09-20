@@ -49,6 +49,7 @@ def menu(stackList, startPointer, endPointer):
 
 # adds a new item to the stack, moves the end pointer forwards.
 def push(endPointer, stackList):
+    # this check failed since len(stacklist) should be len(stackList)-1
     if endPointer < len(stackList):
         item = input("input item: ")
         endPointer += 1
@@ -57,9 +58,16 @@ def push(endPointer, stackList):
     else:
         print("out of range")
 
-def splitString(thisString):
-    listedString = thisString.list()
-    print(listedString)
+# improved version of push without the need for user input
+def push_2(endPointer, stackList, item):
+    if endPointer < len(stackList)-1:
+        endPointer += 1
+        stackList[endPointer] = item
+        return endPointer, stackList
+    else:
+        print("out of range")
+
+
 
 
 # we need a check to see if it has gone over the stack size
@@ -103,7 +111,7 @@ def program_loop_normalStack():
         if cont == False:
             runProgram = False
 
-program_loop_normalStack()
+#program_loop_normalStack()
 
 
 
@@ -116,5 +124,43 @@ effect of reversing the string which the user originally entered.
 """
 
 def program_loop_reverseText():
-    #runProgram = True
+    runReverser = True
+    while runReverser:
+        print("""
+    0 = exit
+    1 = reverser""")
+        command = input("> ")
+        if command == "0":
+            runReverser = False
+        else:
+            stringToRev = input("string: ")
+            reversedString = reverser(stringToRev)
+            print(reversedString)
+
+def reverser(thisString):
+    newList = []
+    stackList, startPointer, endPointer = stackInit(len(thisString))
+    stackLen = len(thisString)
+
+    for letter in range(stackLen):
+
+    # I do not know why it doesn't need a for loop but it just inputs every item automatically
+        letterToinp = thisString[letter]
+        endPointer, stackList = push_2(endPointer, stackList, letterToinp)
+    print(stackList)
+    #for i in range(stackLen):
+
+    return newList
+
+
+program_loop_reverseText()
+
+
+
+
+
+
+
+
+
 
