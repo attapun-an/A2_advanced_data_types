@@ -143,13 +143,13 @@ def reverser(thisString):
     stackLen = len(thisString)
 
     for letter in range(stackLen):
-
-    # I do not know why it doesn't need a for loop but it just inputs every item automatically
         letterToinp = thisString[letter]
         endPointer, stackList = push_2(endPointer, stackList, letterToinp)
     print(stackList)
-    #for i in range(stackLen):
 
+    for i in range(stackLen):
+        endPointer, popped = pop(endPointer, stackList)
+        newList.append(popped)
     return newList
 
 
