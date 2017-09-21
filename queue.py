@@ -7,9 +7,10 @@ Now that you understand what a stack is (LIFO) do you think you could code a que
 
 # Wow, there's a lot of task to complete. I will have to prioritize speed over efficiency.
 
-""" def queue_init(queueInitLength):
+def queue_init(queueInitLength):
     global queueList
     queueList = []
+    # the initial length is actually not important thanks to python's flexible list. but let's anyways
     queueLen = queueInitLength
     for i in range(0,queueLen):
         queueList.append("")
@@ -19,10 +20,18 @@ Now that you understand what a stack is (LIFO) do you think you could code a que
     startPointer = 0
     global endPointer
     endPointer = -1
-    return
-"""
 
-# def push(item):
+
+def push(item):
+    queueList.insert(startPointer, item)
+    global endPointer
+    endPointer += 1
+
+def pop(List):
+    global endPointer
+    popped = List[endPointer]
+    endPointer -= 1
+    return popped
 
 # let's do a few test
 
@@ -32,10 +41,38 @@ def pushtest():
     testList.insert(0, "i")
     testList.insert(0, "h")
     print(testList)
-pushtest()
+# pushtest()
 
-# It works! 
+# It works!
 
+def queueProgram():
+    runQueue = True
+    while runQueue:
+        queue_init(0)
+        QueMenu = True
+        while QueMenu:
+            print(queueList)
+            command = input("""
+            0 = exit
+            1 = push
+            2 = pop
+            """)
+            # Exit
+            if command == "0":
+                QueMenu = False
+                runQueue = False
+            # push
+            elif command == "1":
+                itemtopush = input(">")
+                push(itemtopush)
+            elif command == "2":
+                if endPointer > startPointer:
+                    popped=pop(queueList)
+                    print(popped)
+                else:
+                    print("no items to pop")
+
+queueProgram()
 
 
 
