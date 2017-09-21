@@ -72,7 +72,30 @@ def queueProgram():
                 else:
                     print("no items to pop")
 
-queueProgram()
+# queueProgram()
+
+class custom_Queue:
+    def __init__(self, startPointer, endPointer):
+        self.__startPointer = startPointer
+        self.__endPointer = endPointer
+        self.__array = []
+
+    def pop(self):
+        index = self.__endPointer
+        popped = self.__array[index]
+        self.__endPointer -= 1
+        return popped
+
+    def push(self, item):
+
+        self.__endPointer += 1
+
+
+thisQueue = custom_Queue(0, -1)
+thisQueue.push("hi")
+thisQueue.pop()
+
+
 
 
 

@@ -153,10 +153,24 @@ def reverser(thisString):
     return newList
 
 
-program_loop_reverseText()
+# program_loop_reverseText()
 
 
 
+
+class custom_Stack:
+    def __init__(self, arLn):
+        self.__sP = 0
+        self.__eP = -1
+        self.__length = arLn
+        self.__list = []
+
+    def InitializeStack(self):
+        for i in range(self.__length):
+            self.__list[i] = ""
+
+    def pop(self):
+        popped = stack
 
 
 
