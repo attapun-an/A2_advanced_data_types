@@ -78,21 +78,24 @@ class custom_Queue:
     def __init__(self, startPointer, endPointer):
         self.__startPointer = startPointer
         self.__endPointer = endPointer
-        self.__array = []
+        self.__c_List = []
 
     def pop(self):
         index = self.__endPointer
-        popped = self.__array[index]
+        popped = self.__c_List[index]
         self.__endPointer -= 1
         return popped
 
     def push(self, item):
-
+        c_queue = self.__c_List
         self.__endPointer += 1
+        eP = self.__endPointer
+        c_queue.insert(eP, item)
 
 
 thisQueue = custom_Queue(0, -1)
 thisQueue.push("hi")
+print(thisQueue.__)
 thisQueue.pop()
 
 

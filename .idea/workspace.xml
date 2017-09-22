@@ -19,12 +19,9 @@
       <file leaf-file-name="stack.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="172" column="22" lean-forward="false" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="22" />
-              <folding>
-                <marker date="1506017318000" expanded="true" signature="4631:4900" ph="..." />
-                <marker date="1506017318000" expanded="true" signature="4883:4900" ph="..." />
-              </folding>
+            <state relative-caret-position="217">
+              <caret line="188" column="8" lean-forward="false" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -32,8 +29,8 @@
       <file leaf-file-name="queue.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/queue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="403">
+              <caret line="97" column="18" lean-forward="false" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -47,6 +44,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>3</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,6 +81,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -90,7 +93,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -110,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.queue">
+  <component name="RunManager" selected="Python.stack">
     <configuration name="queue" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,8 +153,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.queue" />
-        <item index="1" class="java.lang.String" itemvalue="Python.stack" />
+        <item index="0" class="java.lang.String" itemvalue="Python.stack" />
+        <item index="1" class="java.lang.String" itemvalue="Python.queue" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +168,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2552504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25928918" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25989446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -195,12 +197,25 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/stack.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stack.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="77" column="19" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="77" selection-end-column="19" />
-          <folding>
-            <marker date="1506017318000" expanded="true" signature="4631:4900" ph="..." />
-            <marker date="1506017318000" expanded="true" signature="4883:4900" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -216,10 +231,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="77" column="19" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="77" selection-end-column="19" />
-          <folding>
-            <marker date="1506017318000" expanded="true" signature="4631:4900" ph="..." />
-            <marker date="1506017318000" expanded="true" signature="4883:4900" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -235,10 +247,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="77" column="19" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="77" selection-end-column="19" />
-          <folding>
-            <marker date="1506017318000" expanded="true" signature="4631:4900" ph="..." />
-            <marker date="1506017318000" expanded="true" signature="4883:4900" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -254,10 +263,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1506017318000" expanded="true" signature="4631:4900" ph="..." />
-            <marker date="1506017318000" expanded="true" signature="4883:4900" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -273,10 +279,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1506017318000" expanded="true" signature="4631:4900" ph="..." />
-            <marker date="1506017318000" expanded="true" signature="4883:4900" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -292,10 +295,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1506017318000" expanded="true" signature="4631:4900" ph="..." />
-            <marker date="1506017318000" expanded="true" signature="4883:4900" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -303,10 +303,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1506017318000" expanded="true" signature="4631:4900" ph="..." />
-            <marker date="1506017318000" expanded="true" signature="4883:4900" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -314,10 +311,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1506017318000" expanded="true" signature="4631:4900" ph="..." />
-            <marker date="1506017318000" expanded="true" signature="4883:4900" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -325,10 +319,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1506017318000" expanded="true" signature="4631:4900" ph="..." />
-            <marker date="1506017318000" expanded="true" signature="4883:4900" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -341,20 +332,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/queue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        <state relative-caret-position="403">
+          <caret line="97" column="18" lean-forward="false" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="172" column="22" lean-forward="false" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="22" />
-          <folding>
-            <marker date="1506017318000" expanded="true" signature="4631:4900" ph="..." />
-            <marker date="1506017318000" expanded="true" signature="4883:4900" ph="..." />
-          </folding>
+        <state relative-caret-position="217">
+          <caret line="188" column="8" lean-forward="false" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

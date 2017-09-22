@@ -105,13 +105,13 @@ print(popped)
 def program_loop_normalStack():
     runProgram = True
     while runProgram:
-        stackList, startPointer, endPointer = stackInit(3)
+        stackList, startPointer, endPointer = stackInit(5)
         # checks if the stack should be re-initiated
         cont = menu(stackList, startPointer, endPointer)
         if cont == False:
             runProgram = False
 
-#program_loop_normalStack()
+# program_loop_normalStack()
 
 
 
@@ -170,7 +170,27 @@ class custom_Stack:
             self.__list[i] = ""
 
     def pop(self):
-        popped = stack
+        popped = self.__list
+        self.__eP += 1
+        return popped
+
+    def popCheck(self):
+        endPointer = self.__eP
+        startPointer = self.__sP
+        if endPointer < startPointer:
+            return False
+        else:
+            return True
+
+    def push(self, item):
+        c_stackList = self.__list
+        endPointer = self.__eP
+        c_stackList[endPointer] = item
+        
+
+
+
+
 
 
 
