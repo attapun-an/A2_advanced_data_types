@@ -87,7 +87,7 @@ class custom_Queue:
         return popped
 
     def push(self, item):
-
+        # when I was trying to insert the item an error came up as something like it would do nothing
         self.__endPointer += 1
 
 
