@@ -87,7 +87,11 @@ class custom_Queue:
         return popped
 
     def push(self, item):
+<<<<<<< HEAD
         c_queue = self.__c_List
+=======
+        # when I was trying to insert the item an error came up as something like it would do nothing
+>>>>>>> origin/master
         self.__endPointer += 1
         eP = self.__endPointer
         c_queue.insert(eP, item)
