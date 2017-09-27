@@ -159,19 +159,21 @@ def reverser(thisString):
 
 
 class custom_Stack:
-    def __init__(self, arLn):
+    def __init__(self):
         self.__sP = 0
         self.__eP = -1
-        self.__length = arLn
-        self.__list = []
+        self.__list = ["", "", "", "", "", "", "", "", "", "", "", ""]
 
-    def InitializeStack(self):
-        for i in range(self.__length):
-            self.__list[i] = ""
+
+    def previewStack(self):
+        print(self.__list)
+
 
     def pop(self):
-        popped = self.__list
-        self.__eP += 1
+        arr = self.__list
+        endPointer = self.__eP
+        popped = arr[endPointer]
+        self.__eP -= 1
         return popped
 
     def popCheck(self):
@@ -182,10 +184,26 @@ class custom_Stack:
         else:
             return True
 
+    # this doesn't work because we are creating a variable from __eP and not changing it
     def push(self, item):
         c_stackList = self.__list
         endPointer = self.__eP
+        endPointer += 1
         c_stackList[endPointer] = item
+
+    def push(self, item):
+        self.__eP += 1
+        self.__list[self.__eP] = item
+
+ThisStack = custom_Stack()
+ThisStack.previewStack()
+
+ThisStack.push(232)
+ThisStack.previewStack()
+ThisStack.push(231)
+ThisStack.previewStack()
+popped = ThisStack.pop()
+print(popped)
         
 
 
