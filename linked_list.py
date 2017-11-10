@@ -1,26 +1,3 @@
-"""
-Task 1 – Nodes
-
-The Node class should have:
-
-Properties/Attributes
-data -> the data stored in the node
-next -> the pointer to the next item in the list
-
-Methods
-getData -> return the data
-getNext -> return the pointer
-setData -> change the stored data
-setNext -> Change the pointer
-
-Once you have created the Node class you need to be
-able to test that it works. So before we move on write
-some code to test that all of the methods you have
-created work as you wanted.
-
-"""
-
-
 class Node:
 
     def __init__(self, init_data):
@@ -46,6 +23,7 @@ class Node:
         self.next = next_node
 
 
+"""
 def main():
     node1 = Node()
     node1.set_data(2)
@@ -59,3 +37,13 @@ def main():
 
 if __name__ == main():
     main()
+
+"""
+
+
+class LinkedList:
+
+    def __init__(self):
+        self.head = None
+
+    def 

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c0bc3bf-97c5-4314-af41-dca913976576" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_class.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/queue.py" afterPath="$PROJECT_DIR$/queue.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_class.py" afterPath="$PROJECT_DIR$/linked_list.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,13 +13,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="node_class.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/node_class.py">
+      <file leaf-file-name="linked_list.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/linked_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="395">
+              <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
               <folding>
-                <element signature="e#680#885#1" expanded="false" />
+                <element signature="e#200#405#1" expanded="false" />
+                <marker date="1510281075000" expanded="false" signature="653:791" ph="..." />
               </folding>
             </state>
           </provider>
@@ -51,9 +49,10 @@
         <option value="$PROJECT_DIR$/reference_oopStack.py" />
         <option value="$PROJECT_DIR$/stack.py" />
         <option value="$PROJECT_DIR$/queue.py" />
-        <option value="$PROJECT_DIR$/node_class.py" />
         <option value="$PROJECT_DIR$/LinkedList/__init__.py" />
         <option value="$PROJECT_DIR$/LinkedList/LinkedList_class.py" />
+        <option value="$PROJECT_DIR$/node_class.py" />
+        <option value="$PROJECT_DIR$/linked_list.py" />
       </list>
     </option>
   </component>
@@ -146,7 +145,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="A2_advanced_data_types" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/node_class.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/linked_list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -256,12 +255,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_class.py">
+    <entry file="file://$PROJECT_DIR$/linked_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#680#885#1" expanded="false" />
+            <element signature="e#200#405#1" expanded="false" />
+            <marker date="1510281075000" expanded="false" signature="653:791" ph="..." />
           </folding>
         </state>
       </provider>
@@ -619,12 +619,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_class.py">
+    <entry file="file://$PROJECT_DIR$/linked_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="395">
+          <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
           <folding>
-            <element signature="e#680#885#1" expanded="false" />
+            <element signature="e#200#405#1" expanded="false" />
+            <marker date="1510281075000" expanded="false" signature="653:791" ph="..." />
           </folding>
         </state>
       </provider>
