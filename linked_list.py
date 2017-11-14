@@ -43,7 +43,31 @@ if __name__ == main():
 
 class LinkedList:
 
+    
     def __init__(self):
         self.head = None
 
-    def 
+    def add(self, item):
+        temp = Node(item)
+        temp.set_next(self.head)
+        head = temp
+
+    def get_size(self):
+        current = self.head
+        size = 0
+        found = False
+        while current.get_next != None or found == True:
+            current = current.get_next
+            size += 1
+            
+
+    # search
+
+    # remove
+
+def main():
+    thisList = UnorderedList()
+    print(thisList.get_data())
+
+if __name__ == main():
+    main()
