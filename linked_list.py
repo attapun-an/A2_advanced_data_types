@@ -54,15 +54,28 @@ removeLast -> Remove the last item in the list
 """
 
 
+
 class UnorderedList:
+
+    
+
     def __init__(self):
 
         self.head = None
+
 
     def isEmpty(self):
         # returns True if head is None. False if head is anything else.
         return self.head is None
         # can also be done with self.head == None
+
+    def get_size(self):
+        current = self.head
+        size = 0
+        found = False
+        while current.get_next != None or found == True:
+            current = current.get_next
+            size += 1
 
     def add(self, item):
         temp = Node(item)
