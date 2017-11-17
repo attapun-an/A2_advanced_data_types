@@ -1,5 +1,4 @@
 class Node:
-
     def __init__(self, init_data):
         # the data stored in the node
         self.data = init_data
@@ -40,10 +39,67 @@ if __name__ == main():
 
 """
 
+"""
+Properties:
+head -> Pointer to the first item in the list
 
-class LinkedList:
+Methods
+isEmpty -> Returns True or False
+add -> Add an item to the list
+size -> Return the size of the list
+search -> Find an item in the list
+removeFront -> Remove first item in the list
+removeLast -> Remove the last item in the list
 
+"""
+
+
+class UnorderedList:
     def __init__(self):
+
         self.head = None
 
-    def 
+    def isEmpty(self):
+        # returns True if head is None. False if head is anything else.
+        return self.head is None
+        # can also be done with self.head == None
+
+    def add(self, item):
+        temp = Node(item)
+        temp.set_next(None)
+        self.head = temp
+
+    def search(self, item):
+        # Update. this makes current into a NODE
+        current = self.head
+        # no idea if this will work or not
+        while not self.isEmpty() or current != item:
+            # no idea if this will work either
+            current = current.get_next()
+        return current
+
+    def remove(self, item):
+        current = self.head
+        previous = None
+        while not self.isEmpty() or current != item:
+            previous = current
+            current = current.get_next()
+        previous.set_next(current)
+
+    def display(self):
+        current = self.head()
+        while current.get_next() is not None:
+
+
+
+
+def main():
+    thisList = UnorderedList()
+    thisList.add(15)
+    thisList.add(23)
+    thisList.add(53)
+
+
+
+if __name__ == main():
+    main()
