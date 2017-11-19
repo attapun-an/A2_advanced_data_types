@@ -67,10 +67,11 @@ class UnorderedList:
         current = self.head
         size = 0
         if self.isEmpty() is not True:
-            
-            print("hi")
-            current = current.get_next()
-            size += 1
+            # it doesn't go through the first loop...
+            while current.get_next() is not None:
+                print("hi")
+                current = current.get_next()
+                size += 1
         return size
 
     def add(self, item):
