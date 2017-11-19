@@ -6,7 +6,13 @@ class LinkedStack(UnorderedList):
         super().__init__()
 
     def push(self, item):
-        self.add(item)
+        current = self.head
+        if self.isEmpty() is not True:
+            while current is not None:
+                current = current.get_next()
+        temp = Node(item)
+        current.set_next(temp)
+        temp = current
 
     def pop(self):
         self.remove_last()
