@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c0bc3bf-97c5-4314-af41-dca913976576" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/linked_list.py" afterPath="$PROJECT_DIR$/linked_list.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,12 +17,12 @@
       <file leaf-file-name="linked_list.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linked_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="154" column="31" lean-forward="false" selection-start-line="154" selection-start-column="31" selection-end-line="154" selection-end-column="31" />
+            <state relative-caret-position="316">
+              <caret line="54" column="76" lean-forward="false" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
               <folding>
                 <element signature="e#199#404#1" expanded="false" />
                 <element signature="e#637#831#1" expanded="false" />
-                <marker date="1511114452000" expanded="false" signature="652:790" ph="..." />
+                <marker date="1511115579000" expanded="false" signature="652:790" ph="..." />
               </folding>
             </state>
           </provider>
@@ -282,7 +283,7 @@
           <folding>
             <element signature="e#199#404#1" expanded="false" />
             <element signature="e#637#831#1" expanded="false" />
-            <marker date="1511114452000" expanded="false" signature="652:790" ph="..." />
+            <marker date="1511115579000" expanded="false" signature="652:790" ph="..." />
           </folding>
         </state>
       </provider>
@@ -294,7 +295,7 @@
           <folding>
             <element signature="e#199#404#1" expanded="false" />
             <element signature="e#637#831#1" expanded="false" />
-            <marker date="1511114452000" expanded="false" signature="652:790" ph="..." />
+            <marker date="1511115579000" expanded="false" signature="652:790" ph="..." />
           </folding>
         </state>
       </provider>
@@ -306,7 +307,7 @@
           <folding>
             <element signature="e#199#404#1" expanded="false" />
             <element signature="e#637#831#1" expanded="false" />
-            <marker date="1511114452000" expanded="false" signature="652:790" ph="..." />
+            <marker date="1511115579000" expanded="false" signature="652:790" ph="..." />
           </folding>
         </state>
       </provider>
@@ -318,7 +319,7 @@
           <folding>
             <element signature="e#199#404#1" expanded="false" />
             <element signature="e#637#831#1" expanded="false" />
-            <marker date="1511114452000" expanded="false" signature="652:790" ph="..." />
+            <marker date="1511115579000" expanded="false" signature="652:790" ph="..." />
           </folding>
         </state>
       </provider>
@@ -330,7 +331,7 @@
           <folding>
             <element signature="e#199#404#1" expanded="false" />
             <element signature="e#637#831#1" expanded="false" />
-            <marker date="1511114452000" expanded="false" signature="652:790" ph="..." />
+            <marker date="1511115579000" expanded="false" signature="652:790" ph="..." />
           </folding>
         </state>
       </provider>
@@ -613,12 +614,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/linked_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="154" column="31" lean-forward="false" selection-start-line="154" selection-start-column="31" selection-end-line="154" selection-end-column="31" />
+        <state relative-caret-position="316">
+          <caret line="54" column="76" lean-forward="false" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
           <folding>
             <element signature="e#199#404#1" expanded="false" />
             <element signature="e#637#831#1" expanded="false" />
-            <marker date="1511114452000" expanded="false" signature="652:790" ph="..." />
+            <marker date="1511115579000" expanded="false" signature="652:790" ph="..." />
           </folding>
         </state>
       </provider>

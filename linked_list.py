@@ -93,13 +93,30 @@ class UnorderedList:
         else:
             return{"status": "List is empty", "item": item}
 
+    def remove_first(self):
+        current = self.head
+        previous = current
+        previous.set_next(current.get_next())
+
+    def remove_last(self):
+        current = self.head
+        previous = None
+        while current is not None:
+            previous = current
+            current = current.get_next()
+        previous.set_next(None)
+
     def remove(self, item):
         current = self.head
         previous = None
-        while not self.isEmpty() or current != item:
+        while current != None:
             previous = current
             current = current.get_next()
         previous.set_next(current)
+
+
+
+
 
     def display_test(self):
         current = self.head
@@ -113,9 +130,11 @@ class UnorderedList:
 
     def display2(self):
         current = self.head
+        line = ""
         while current is not None:
-            print(current.get_data())
+            line = line + (str(current.get_data())) + " "
             current = current.get_next()
+        print (line)
 
 
 
@@ -152,7 +171,23 @@ def main():
     print(result["status"])
     print(result["item"])
 
-    # works for the time beings
+    # works for the time being
+
+    # add more items for removal
+    thisList.add(120)
+    thisList.add(150)
+    print("full list")
+    thisList.display2()
+
+    print("remove first")
+    thisList.remove_first()
+    thisList.display2()
+
+    print("remove last")
+    thisList.remove_last()
+    thisList.display2()
+
+
 
 
 
