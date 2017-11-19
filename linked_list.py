@@ -99,7 +99,7 @@ class UnorderedList:
             current = current.get_next()
         previous.set_next(current)
 
-    def display(self):
+    def display_test(self):
         current = self.head
         # self.head points to the Node..
         print(current.get_data())
@@ -109,7 +109,12 @@ class UnorderedList:
         print(current.get_data())
         current = current.get_next()
 
-    
+    def display2(self):
+        current = self.head
+        while current != None:
+            print(current.get_data())
+            current = current.get_next()
+
 
 
 
@@ -121,11 +126,14 @@ def main():
     thisList.add(15)
     thisList.add(23)
     thisList.add(53)
-    # lets go through the items and see if they are connected:
+
     print("3 items have been added")
     print("empty check {0}".format(thisList.isEmpty()))
 
-    thisList.display()
+    # lets go through the items and see if they are connected:
+    thisList.display_test()
+    # now let's loop
+    thisList.display2()
 
     # print("check size: {0}".format(thisList.get_size()))
 
