@@ -82,17 +82,16 @@ class UnorderedList:
     def search(self, item):
         current = self.head
         # if the list is not empty
-        if self.isEmpty() is not False:
+        if self.isEmpty() is not True:
             while current is not None:
                 cur_item = current.get_data()
-                print(cur_item)
                 if cur_item == item:
-                    return {"found": True, "item": item}
+                    return {"status": "Found", "item": item}
                 else:
                     current = current.get_next()
-            return{"found": False, "item": item}
+            return{"status": "Not Found", "item": item}
         else:
-            return{"found": False, "item": item}
+            return{"status": "List is empty", "item": item}
 
     def remove(self, item):
         current = self.head
@@ -144,14 +143,16 @@ def main():
     # search (normal val)
     print()
     result = thisList.search(15)
-    print(result["found"])
+    print(result["status"])
     print(result["item"])
 
     # search abnormal data
     print()
     result = thisList.search(100)
-    print(result["found"])
+    print(result["status"])
     print(result["item"])
+
+    # works for the time beings
 
 
 
