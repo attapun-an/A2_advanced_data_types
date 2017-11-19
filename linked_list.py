@@ -64,19 +64,18 @@ class UnorderedList:
         # can also be done with self.head == None
 
     def get_size(self):
-        current = self.head
+        current = Node(self.head)
         size = 0
         if self.isEmpty() is not True:
             # it doesn't go through the first loop...
-            while current.get_next() is not None:
-                print("hi")
+            while current.get_next is not None:
                 current = current.get_next()
                 size += 1
         return size
 
     def add(self, item):
         temp = Node(item)
-        temp.set_next(None)
+        temp.set_next(self.head)
         self.head = temp
 
     def search(self, item):
