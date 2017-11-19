@@ -66,7 +66,7 @@ class UnorderedList:
         # can also be done with self.head == None
 
     def get_size(self):
-        current = Node(self.head)
+        current = self.head
         size = 0
         if self.isEmpty() is not True:
             while current != None:
@@ -135,7 +135,9 @@ def main():
     # now let's loop
     thisList.display2()
 
-    # print("check size: {0}".format(thisList.get_size()))
+
+    # let's see if you will work now..
+    print("check size: {0}".format(thisList.get_size()))
 
 
 

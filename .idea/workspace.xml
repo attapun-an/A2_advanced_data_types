@@ -16,12 +16,12 @@
       <file leaf-file-name="linked_list.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linked_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="135" column="23" lean-forward="false" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
+            <state relative-caret-position="141">
+              <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
               <folding>
                 <element signature="e#199#404#1" expanded="false" />
                 <element signature="e#637#831#1" expanded="false" />
-                <marker date="1511109767000" expanded="false" signature="652:790" ph="..." />
+                <marker date="1511109951000" expanded="false" signature="652:790" ph="..." />
               </folding>
             </state>
           </provider>
@@ -246,12 +246,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="27" width="1280" height="741" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3069467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32791728" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25701624" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25701624" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -281,7 +282,7 @@
           <folding>
             <element signature="e#199#404#1" expanded="false" />
             <element signature="e#637#831#1" expanded="false" />
-            <marker date="1511109767000" expanded="false" signature="652:790" ph="..." />
+            <marker date="1511109951000" expanded="false" signature="652:790" ph="..." />
           </folding>
         </state>
       </provider>
@@ -293,7 +294,7 @@
           <folding>
             <element signature="e#199#404#1" expanded="false" />
             <element signature="e#637#831#1" expanded="false" />
-            <marker date="1511109767000" expanded="false" signature="652:790" ph="..." />
+            <marker date="1511109951000" expanded="false" signature="652:790" ph="..." />
           </folding>
         </state>
       </provider>
@@ -305,7 +306,7 @@
           <folding>
             <element signature="e#199#404#1" expanded="false" />
             <element signature="e#637#831#1" expanded="false" />
-            <marker date="1511109767000" expanded="false" signature="652:790" ph="..." />
+            <marker date="1511109951000" expanded="false" signature="652:790" ph="..." />
           </folding>
         </state>
       </provider>
@@ -317,7 +318,7 @@
           <folding>
             <element signature="e#199#404#1" expanded="false" />
             <element signature="e#637#831#1" expanded="false" />
-            <marker date="1511109767000" expanded="false" signature="652:790" ph="..." />
+            <marker date="1511109951000" expanded="false" signature="652:790" ph="..." />
           </folding>
         </state>
       </provider>
@@ -329,7 +330,7 @@
           <folding>
             <element signature="e#199#404#1" expanded="false" />
             <element signature="e#637#831#1" expanded="false" />
-            <marker date="1511109767000" expanded="false" signature="652:790" ph="..." />
+            <marker date="1511109951000" expanded="false" signature="652:790" ph="..." />
           </folding>
         </state>
       </provider>
@@ -612,12 +613,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/linked_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="135" column="23" lean-forward="false" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
+        <state relative-caret-position="141">
+          <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
           <folding>
             <element signature="e#199#404#1" expanded="false" />
             <element signature="e#637#831#1" expanded="false" />
-            <marker date="1511109767000" expanded="false" signature="652:790" ph="..." />
+            <marker date="1511109951000" expanded="false" signature="652:790" ph="..." />
           </folding>
         </state>
       </provider>
