@@ -94,17 +94,22 @@ class UnorderedList:
             return{"status": "List is empty", "item": item}
 
     def remove_first(self):
-        current = self.head
-        previous = current
-        previous.set_next(current.get_next())
+        if self.isEmpty() is False:
+            current = self.head
+            self.head = current.get_next()
 
     def remove_last(self):
-        current = self.head
-        previous = None
-        while current is not None:
-            previous = current
-            current = current.get_next()
-        previous.set_next(None)
+        if self.isEmpty() is False:
+            current = self.head
+            previous = None
+            # cheat method
+            while current.get_next() is not None:
+                previous = current
+                current = current.get_next()
+            previous.set_next(None)
+
+
+
 
     def remove(self, item):
         current = self.head
@@ -184,6 +189,9 @@ def main():
     thisList.display2()
 
     print("remove last")
+    thisList.remove_last()
+    thisList.display2()
+
     thisList.remove_last()
     thisList.display2()
 
