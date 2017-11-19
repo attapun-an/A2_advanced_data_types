@@ -66,9 +66,10 @@ class UnorderedList:
     def get_size(self):
         current = self.head
         size = 0
-        while current.get_next() is not None:
+        if self.isEmpty() is not True:
+            
+            print("hi")
             current = current.get_next()
-
             size += 1
         return size
 
@@ -109,7 +110,7 @@ def main():
     thisList.add(53)
     print("3 items have been added")
     print("empty check {0}".format(thisList.isEmpty()))
-    print("check size")
+    print("check size: {0}".format(thisList.get_size()))
 
 
 
