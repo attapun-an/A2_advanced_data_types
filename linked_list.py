@@ -12,7 +12,7 @@ class Node:
     def get_data(self):
         return self.data
 
-    def get_next(self):
+    def get_next(self) -> object:
         return self.next
 
     def set_data(self, new_data):
@@ -54,15 +54,9 @@ removeLast -> Remove the last item in the list
 """
 
 
-
 class UnorderedList:
-
-    
-
     def __init__(self):
-
         self.head = None
-
 
     def isEmpty(self):
         # returns True if head is None. False if head is anything else.
@@ -72,10 +66,11 @@ class UnorderedList:
     def get_size(self):
         current = self.head
         size = 0
-        found = False
-        while current.get_next != None or found == True:
-            current = current.get_next
+        while current.get_next() is not None:
+            current = current.get_next()
+
             size += 1
+        return size
 
     def add(self, item):
         temp = Node(item)
@@ -86,10 +81,13 @@ class UnorderedList:
         # Update. this makes current into a NODE
         current = self.head
         # no idea if this will work or not
-        while not self.isEmpty() or current != item:
+        while not self.isEmpty() or current.get_data() != item:
             # no idea if this will work either
             current = current.get_next()
-        return current
+        if current.get_data is not None:
+            return current.get_data()
+        else:
+            return "item not found"
 
     def remove(self, item):
         current = self.head
@@ -99,18 +97,19 @@ class UnorderedList:
             current = current.get_next()
         previous.set_next(current)
 
-    def display(self):
-        current = self.head()
-        while current.get_next() is not None:
-
 
 
 
 def main():
     thisList = UnorderedList()
+    print("new list created")
+    print("empty check {0}".format(thisList.isEmpty()))
     thisList.add(15)
     thisList.add(23)
     thisList.add(53)
+    print("3 items have been added")
+    print("empty check {0}".format(thisList.isEmpty()))
+    print("check size")
 
 
 
