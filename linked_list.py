@@ -108,16 +108,17 @@ class UnorderedList:
                 current = current.get_next()
             previous.set_next(None)
 
-
-
-
     def remove(self, item):
         current = self.head
         previous = None
         while current != None:
             previous = current
             current = current.get_next()
-        previous.set_next(current)
+            if current.get_data() == item:
+                previous.set_next(current.get_next())
+                break
+
+
 
 
 
@@ -193,6 +194,10 @@ def main():
     thisList.display2()
 
     thisList.remove_last()
+    thisList.display2()
+
+    # lets remove 53
+    thisList.remove(53)
     thisList.display2()
 
 
