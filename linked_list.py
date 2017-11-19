@@ -12,7 +12,7 @@ class Node:
     def get_data(self):
         return self.data
 
-    def get_next(self) -> object:
+    def get_next(self):
         return self.next
 
     def set_data(self, new_data):
@@ -99,6 +99,18 @@ class UnorderedList:
             current = current.get_next()
         previous.set_next(current)
 
+    def display(self):
+        current = self.head
+        # self.head points to the Node..
+        print(current.get_data())
+        current = current.get_next()
+        print(current.get_data())
+        current = current.get_next()
+        print(current.get_data())
+        current = current.get_next()
+
+    
+
 
 
 
@@ -109,9 +121,13 @@ def main():
     thisList.add(15)
     thisList.add(23)
     thisList.add(53)
+    # lets go through the items and see if they are connected:
     print("3 items have been added")
     print("empty check {0}".format(thisList.isEmpty()))
-    print("check size: {0}".format(thisList.get_size()))
+
+    thisList.display()
+
+    # print("check size: {0}".format(thisList.get_size()))
 
 
 
