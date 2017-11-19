@@ -69,7 +69,7 @@ class UnorderedList:
         current = self.head
         size = 0
         if self.isEmpty() is not True:
-            while current != None:
+            while current is not None:
                 size += 1
                 current = current.get_next()
         return size
@@ -80,16 +80,18 @@ class UnorderedList:
         self.head = temp
 
     def search(self, item):
-        # Update. this makes current into a NODE
         current = self.head
-        # no idea if this will work or not
-        while not self.isEmpty() or current.get_data() != item:
-            # no idea if this will work either
-            current = current.get_next()
-        if current.get_data is not None:
-            return current.get_data()
+        # if the list is not empty
+        if self.isEmpty() is not False:
+            while current is not None:
+                cur_item = current.get_data()
+                if cur_item == item:
+                    return {"found": True, "item": item}
+                else:
+                    current = current.get_next()
+            return{"found": False, "item": item}
         else:
-            return "item not found"
+            return{"found": False, "item": item}
 
     def remove(self, item):
         current = self.head
@@ -111,7 +113,7 @@ class UnorderedList:
 
     def display2(self):
         current = self.head
-        while current != None:
+        while current is not None:
             print(current.get_data())
             current = current.get_next()
 
@@ -131,13 +133,24 @@ def main():
     print("empty check {0}".format(thisList.isEmpty()))
 
     # lets go through the items and see if they are connected:
-    thisList.display_test()
+    # thisList.display_test()
     # now let's loop
     thisList.display2()
 
-
-    # let's see if you will work now..
+    # get_size
     print("check size: {0}".format(thisList.get_size()))
+
+    # search (normal val)
+    print()
+    result = thisList.search(23)
+    print(result["found"])
+    print(result["item"])
+
+    # search abnormal data
+    print()
+    result = thisList.search(100)
+    print(result["found"])
+    print(result["item"])
 
 
 
