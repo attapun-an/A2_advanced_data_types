@@ -120,10 +120,6 @@ class UnorderedList:
 
 
 
-
-
-
-
     def display_test(self):
         current = self.head
         # self.head points to the Node..
@@ -143,7 +139,7 @@ class UnorderedList:
         print (line)
 
 
-
+"""
 
 
 def main():
@@ -205,4 +201,4 @@ def main():
 
 
 if __name__ == main():
-    main()
+    main()"""
