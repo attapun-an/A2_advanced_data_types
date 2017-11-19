@@ -51,6 +51,8 @@ search -> Find an item in the list
 removeFront -> Remove first item in the list
 removeLast -> Remove the last item in the list
 
+help at
+http://interactivepython.org/runestone/static/pythonds/BasicDS/ImplementinganUnorderedListLinkedLists.html
 """
 
 
@@ -67,14 +69,9 @@ class UnorderedList:
         current = Node(self.head)
         size = 0
         if self.isEmpty() is not True:
-            # run = True
-            # while run:
+            while current != None:
+                size += 1
                 current = current.get_next()
-                if current is not None:
-                    run = False
-
-                else:
-                    size += 1
         return size
 
     def add(self, item):
