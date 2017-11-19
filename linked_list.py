@@ -85,6 +85,7 @@ class UnorderedList:
         if self.isEmpty() is not False:
             while current is not None:
                 cur_item = current.get_data()
+                print(cur_item)
                 if cur_item == item:
                     return {"found": True, "item": item}
                 else:
@@ -142,7 +143,7 @@ def main():
 
     # search (normal val)
     print()
-    result = thisList.search(23)
+    result = thisList.search(15)
     print(result["found"])
     print(result["item"])
 
