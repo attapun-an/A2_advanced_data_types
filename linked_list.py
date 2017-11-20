@@ -118,8 +118,6 @@ class UnorderedList:
                 previous.set_next(current.get_next())
                 break
 
-
-
     def display_test(self):
         current = self.head
         # self.head points to the Node..

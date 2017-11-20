@@ -1,5 +1,6 @@
 from linked_list import *
 
+# first one in, first one out
 class LinkedQueue(UnorderedList):
     
     def __init__(self):
