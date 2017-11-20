@@ -1,4 +1,5 @@
-from linked_list import *
+from linked_list_unordered import *
+
 
 # first one in, first one out
 class LinkedQueue(UnorderedList):
@@ -11,6 +12,7 @@ class LinkedQueue(UnorderedList):
 
     def pop(self):
         self.remove_last()
+
 
 def main():
     thisQueue = LinkedQueue()

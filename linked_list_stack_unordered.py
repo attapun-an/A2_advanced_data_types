@@ -1,12 +1,4 @@
-from linked_list import *
-
-# couldn't get node methods to work so trying to init
-
-class NewNode(Node):
-
-    def __init__(self):
-        super().__init__(None)
-
+from linked_list_unordered import *
 
 # first one in, last one out
 class LinkedStack(UnorderedList):
