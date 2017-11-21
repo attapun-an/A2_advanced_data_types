@@ -99,8 +99,6 @@ class UnorderedList:
         print (line)
 
 
-"""
-
 
 def main():
     thisList = UnorderedList()
@@ -161,4 +159,5 @@ def main():
 
 
 if __name__ == main():
-    main()"""
+    main()
+

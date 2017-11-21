@@ -8,6 +8,7 @@ class Node:
          point to anything yet (just creating nodes)
          if it doesn't point to anything - we know it's not
          in a list, or it's at the end"""
+        self.prev = None
 
     def get_data(self):
         return self.data
@@ -15,11 +16,17 @@ class Node:
     def get_next(self) -> object:
         return self.next
 
+    def get_prev(self):
+        return self.prev
+
     def set_data(self, new_data):
         self.data = new_data
 
     def set_next(self, next_node):
         self.next = next_node
+
+    def set_prev(self, prev_node):
+        self.prev = prev_node
 
 
 
