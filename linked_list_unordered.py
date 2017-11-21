@@ -23,8 +23,7 @@ class UnorderedList:
 
     def isEmpty(self):
         # returns True if head is None. False if head is anything else.
-        return self.head is None
-        # can also be done with self.head == None
+        return self.head is None # can also be done with self.head == None
 
     def get_size(self):
         current = self.head
@@ -48,6 +47,7 @@ class UnorderedList:
                 cur_item = current.get_data()
                 if cur_item == item:
                     return {"status": "Found", "item": item}
+                    # Mr. M -- return True -> can be used as a check for remove(item)
                 else:
                     current = current.get_next()
             return{"status": "Not Found", "item": item}
@@ -70,6 +70,7 @@ class UnorderedList:
             previous.set_next(None)
 
     def remove(self, item):
+        # Mr. M -- This should also have a check
         current = self.head
         previous = None
         while current != None:
