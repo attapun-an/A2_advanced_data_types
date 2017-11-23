@@ -33,7 +33,9 @@ class OrderedList():
                 if current.get_data() < item:
                     print("checked")
                     # break the loop
-                    found = True
+                    prev.set_next(temp)
+                    temp.set_next(current)
+                    return "Done"
 
                 prev = current
                 print("prev: {0}".format(prev.get_data()))
@@ -41,8 +43,10 @@ class OrderedList():
                 print("curr: {0}".format(current.get_data()))
                 print("incrimented")
 
+            # if it is not found before the end it is added to the tail
             prev.set_next(temp)
-            temp.set_next(current)
+            temp.set_next(None)
+
 
 
 
