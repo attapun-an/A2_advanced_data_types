@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c0bc3bf-97c5-4314-af41-dca913976576" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/linked_list_ordered.py" afterPath="$PROJECT_DIR$/linked_list_ordered.py" />
     </list>
@@ -18,10 +17,10 @@
       <file leaf-file-name="linked_list_ordered.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linked_list_ordered.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+            <state relative-caret-position="107">
+              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
               <folding>
-                <marker date="1511455879000" expanded="true" signature="44:1419" ph="..." />
+                <marker date="1511457022000" expanded="true" signature="44:1528" ph="..." />
               </folding>
             </state>
           </provider>
@@ -650,19 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/linked_list_unordered.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="98" column="20" lean-forward="true" selection-start-line="92" selection-start-column="4" selection-end-line="98" selection-end-column="20" />
-          <folding>
-            <element signature="e#1850#2090#0" expanded="false" />
-            <element signature="e#2480#2753#0" expanded="false" />
-            <marker date="1511229045000" expanded="true" signature="536:684" ph="..." />
-            <marker date="1511229045000" expanded="true" signature="2982:4209" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LL_node.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -674,12 +660,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/linked_list_unordered.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="e#1850#2090#0" expanded="false" />
+            <element signature="e#2480#2753#0" expanded="false" />
+            <marker date="1511229045000" expanded="true" signature="536:684" ph="..." />
+            <marker date="1511229045000" expanded="true" signature="2982:4209" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/linked_list_ordered.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="107">
+          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
           <folding>
-            <marker date="1511455879000" expanded="true" signature="44:1419" ph="..." />
+            <marker date="1511457022000" expanded="true" signature="44:1528" ph="..." />
           </folding>
         </state>
       </provider>
