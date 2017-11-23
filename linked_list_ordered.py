@@ -58,7 +58,11 @@ def main():
     thisList.display2()
     thisList.add(2)
     thisList.display2()
-    
+    thisList.add(3)
+    thisList.display2()
+    thisList.add(4)
+    thisList.display2()
+
 
 
 if __name__ == '__main__':
