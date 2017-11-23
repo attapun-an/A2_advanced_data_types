@@ -33,9 +33,9 @@ class OrderedList():
                 if current.get_data() < item:
                     # break the loop
                     found = True
-                else:
-                    prev = current
+                prev = current
                 current = current.get_next()
+
             prev.set_next(temp)
             temp.set_next(current)
 
@@ -61,6 +61,8 @@ def main():
     thisList.add(3)
     thisList.display2()
     thisList.add(4)
+    thisList.display2()
+    thisList.add(5)
     thisList.display2()
 
 
