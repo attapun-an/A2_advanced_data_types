@@ -16,10 +16,35 @@
       <file leaf-file-name="linked_list_ordered.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linked_list_ordered.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+            <state relative-caret-position="900">
+              <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
               <folding>
-                <marker date="1511457739000" expanded="true" signature="44:1484" ph="..." />
+                <marker date="1511459215000" expanded="true" signature="44:1524" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="linked_list_queue_unordered.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/linked_list_queue_unordered.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="linked_list_unordered.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/linked_list_unordered.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="54" column="59" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="54" selection-end-column="59" />
+              <folding>
+                <element signature="e#1850#2090#0" expanded="false" />
+                <element signature="e#2480#2753#0" expanded="false" />
+                <marker date="1511229045000" expanded="true" signature="536:684" ph="..." />
+                <marker date="1511229045000" expanded="true" signature="2982:4209" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
               </folding>
             </state>
           </provider>
@@ -634,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/linked_list_queue_unordered.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/node test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -661,8 +679,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/linked_list_unordered.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="255">
+          <caret line="54" column="59" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="54" selection-end-column="59" />
           <folding>
             <element signature="e#1850#2090#0" expanded="false" />
             <element signature="e#2480#2753#0" expanded="false" />
@@ -672,12 +690,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/linked_list_queue_unordered.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/linked_list_ordered.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+        <state relative-caret-position="900">
+          <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
           <folding>
-            <marker date="1511457739000" expanded="true" signature="44:1484" ph="..." />
+            <marker date="1511459215000" expanded="true" signature="44:1524" ph="..." />
           </folding>
         </state>
       </provider>

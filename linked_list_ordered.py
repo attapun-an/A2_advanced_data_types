@@ -20,23 +20,22 @@ class OrderedList():
         # keeps track of previous item
         prev = current
         temp = Node(item)
+        found = False
 
         if self.isEmpty() is True:
             self.head = temp
             temp.set_next(None)
+
         else:
-
-            found = False
+            current = current.get_next()
             # loop through till the next item is == None AND the position has not been found
-            while current.get_next() is not None and found is False:
-                current = current.get_next()
-
+            while current is not None and found is False:
                 if current.get_data() < item:
                     # break the loop
                     found = True
                 else:
                     prev = current
-
+                current = current.get_next()
             prev.set_next(temp)
             temp.set_next(current)
 
@@ -58,7 +57,8 @@ def main():
     thisList.add(1)
     thisList.display2()
     thisList.add(2)
-    thisList
+    thisList.display2()
+    
 
 
 if __name__ == '__main__':
