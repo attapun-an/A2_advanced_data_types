@@ -28,13 +28,18 @@ class OrderedList():
 
         else:
             current = current.get_next()
-            # loop through till the next item is == None AND the position has not been found
+            # loop through while the next item is not None AND the position has not been found
             while current is not None and found is False:
                 if current.get_data() < item:
+                    print("checked")
                     # break the loop
                     found = True
+
                 prev = current
+                print("prev: {0}".format(prev.get_data()))
                 current = current.get_next()
+                print("curr: {0}".format(current.get_data()))
+                print("incrimented")
 
             prev.set_next(temp)
             temp.set_next(current)
