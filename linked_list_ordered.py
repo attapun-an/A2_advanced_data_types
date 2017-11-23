@@ -13,17 +13,22 @@ class OrderedList():
     end, we get None .Loop through it until we hit None, then add it" """
     # add
     def add(self, item):
-        if self.isEmpty():
-            temp = Node(item)
+
+        # set up variables
+
+        current = self.head
+        # keeps track of previous item
+        prev = current
+        temp = Node(item)
+
+        if self.isEmpty() is True:
             self.head = temp
             temp.set_next(None)
         else:
-            current = self.head
-            # keeps track of previous item
-            prev = current
+
             found = False
             # loop through till the next item is == None AND the position has not been found
-            while current.get_data() is not None and found is False:
+            while current.get_next() is not None and found is False:
                 current = current.get_next()
 
                 if current.get_data() < item:
@@ -32,8 +37,6 @@ class OrderedList():
                 else:
                     prev = current
 
-            # generate node for item
-            temp = Node(item)
             prev.set_next(temp)
             temp.set_next(current)
 
