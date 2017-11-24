@@ -20,30 +20,35 @@ class OrderedList():
         # keeps track of previous item
         prev = current
         temp = Node(item)
-        found = False
 
         if self.isEmpty() is True:
-            self.head = temp
             temp.set_next(None)
+            self.head = temp
+
 
         else:
             current = current.get_next()
             # loop through while the next item is not None AND the position has not been found
-            while current is not None and found is False:
-                if current.get_data() < item:
-                    print("checked")
-                    # break the loop
-                    found = True
+            while current is not None:
+                if current.get_data() > item:
+                    temp.set_next(current)
+                    prev.set_next(temp)
+                    return
+                # Advice from Buta
+
+                # when you find a problem, look at every line separately and try to figure it out
+                # only have one print statement at a time, print separately
+
+                # you have to code more, get used to recurssion in code
+                # use return, stop using print all the time
 
                 prev = current
                 # print("prev: {0}".format(prev.get_data()))
                 current = current.get_next()
                 # print("curr: {0}".format(current.get_data()))
-                print("incrimented")
-
-            # if it is not found before the end it is added to the tail
-            prev.set_next(temp)
             temp.set_next(current)
+            prev.set_next(temp)
+
 
 
 
@@ -67,7 +72,7 @@ def main():
     thisList.display2()
     thisList.add(3)
     thisList.display2()
-    thisList.add(4)
+    thisList.add(40)
     thisList.display2()
     thisList.add(5)
     thisList.display2()
