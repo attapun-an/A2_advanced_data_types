@@ -13,7 +13,6 @@ class OrderedList():
     end, we get None .Loop through it until we hit None, then add it" """
     # add
     def add(self, item):
-
         # set up variables
 
         current = self.head
@@ -48,6 +47,7 @@ class OrderedList():
                 # print("curr: {0}".format(current.get_data()))
             temp.set_next(current)
             prev.set_next(temp)
+
 
 
 
