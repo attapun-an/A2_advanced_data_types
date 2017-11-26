@@ -70,15 +70,18 @@ class UnorderedList:
             previous.set_next(None)
 
     def remove(self, item):
+        print("attemping to remove {0}".format(item))
         # Mr. M -- This should also have a check
         current = self.head
         previous = None
         while current != None:
-            previous = current
-            current = current.get_next()
             if current.get_data() == item:
                 previous.set_next(current.get_next())
+                found = True
                 break
+            else:
+                previous = current
+                current = current.get_next()
 
     def display_test(self):
         current = self.head
