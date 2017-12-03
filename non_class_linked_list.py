@@ -15,21 +15,60 @@ NullPointer = -1
 # constant positions in 2D array
 data = 0
 pointer = 1
+array = []
+array_length = 7
 
-
-
-# create 2d array??
-
-
-
-
-
+# main_menu
+menu1 = ["exit", "display options", "add", "search", "remove", "display list"]
 
 # LOGIC
-def init_list(list_name):
-    for i in range(6):
-        list_name[][]
+def init_array(array, itemsInArray):
+    # fill with Null
+    for i in range (itemsInArray):
+        array.append([None, None])
 
-print(ordered_list)
-# Initialize list
+    #Initialise Pointers
+    # (set start pointer to -1)
+    StartPointer = NullPointer
+    #
+    FreeListPtr = 0
+    
+
+
+
+
+# UI/MENU SYSTEM
+def display_options(menu_num):
+    for i in range(menu_num):
+        print("{0} {1}".format(i, menu_num[i]))
+
+def u_input(options):
+    invalid = True
+    while invalid:
+        try:
+            command = int(input())
+            if 0 >= command > options:
+                print("command out of range")
+            else:
+                invalid = False
+                print ("value accepted")
+        except ValueError():
+            print("invalid input")
+    return command
+
+def main():
+    #initialize array
+
+
+    display_options()
+    test = True
+    while test:
+
+
+
+
+if __name__ == "__main__":
+    main()
+
+
 

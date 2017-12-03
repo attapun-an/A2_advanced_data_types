@@ -14,7 +14,8 @@ def testlist_02():
         array02.append(["",""])
     print(array02)
 
-"""Yay~~~ Finally found how to set up a 2D array, (it's just basically a nested list"""
+""" Yay~~~ Finally found how to set up a 2D array, (it's just basically a nested list """
+
 
 
 def main():
