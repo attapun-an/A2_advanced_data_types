@@ -15,6 +15,7 @@ NullPointer = -1
 # constant positions in 2D array
 data = 0
 pointer = 1
+
 array = []
 array_length = 7
 
@@ -22,17 +23,22 @@ array_length = 7
 menu1 = ["exit", "display options", "add", "search", "remove", "display list"]
 
 # LOGIC
-def init_array(array, itemsInArray):
+def init_array( itemsInArray):
     # fill with Null
+    # assuming there will be only one list using a global variable
     for i in range (itemsInArray):
+        global array
         array.append([None, None])
 
     #Initialise Pointers
-    # (set start pointer to -1)
+    # set start pointer to -1
     StartPointer = NullPointer
-    #
+    # set starting point of free list
     FreeListPtr = 0
-    
+    for i in range(itemsInArray-1):
+
+
+
 
 
 
