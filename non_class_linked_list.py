@@ -23,7 +23,7 @@ array_length = 7
 menu1 = ["exit", "display options", "add", "search", "remove", "display list"]
 
 # LOGIC
-def init_array( itemsInArray):
+def init_array(itemsInArray):
     # fill with Null
     # assuming there will be only one list using a global variable
     for i in range (itemsInArray):
@@ -36,6 +36,11 @@ def init_array( itemsInArray):
     # set starting point of free list
     FreeListPtr = 0
     for i in range(itemsInArray-1):
+        array[i] = i+1
+    # last item pointer assigned -1
+    array [itemsInArray][pointer] = NullPointer
+
+
 
 
 
