@@ -24,6 +24,9 @@ menu1 = ["exit", "display options", "add", "search", "remove", "display list"]
 
 # LOGIC
 def init_array(itemsInArray):
+    global  StartPointer
+    global FreeListPtr
+    global NullPointer
     # fill with Null
     # assuming there will be only one list using a global variable
     for i in range (itemsInArray):
@@ -39,6 +42,20 @@ def init_array(itemsInArray):
         array[i] = i+1
     # last item pointer assigned -1
     array [itemsInArray][pointer] = NullPointer
+
+def display_array():
+    global StartPointer
+    global NullPointer
+    global array
+
+    CurrentNodePtr = StartPointer #start at beginning of list
+    while CurrentNodePtr != NullPointer: # while not the end of list
+        print(array[CurrentNodePtr][data])
+        # follow pointer to next node
+        CurrentNodePtr = array[CurrentNodePtr][pointer]
+    
+
+
 
 
 
